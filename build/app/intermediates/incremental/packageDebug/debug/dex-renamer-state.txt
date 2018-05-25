@@ -1,0 +1,4 @@
+#Fri May 25 12:52:32 ICT 2018
+base.0=/Users/vuphan/Documents/GitHub/flutter_2d/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
