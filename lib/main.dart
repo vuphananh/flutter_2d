@@ -48,20 +48,20 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 //  String _currentAnimationName = "badge_challenger";
 //  String _currentAnimationName = "badge_dreamer";
-//  String _currentAnimationName = "badge_expert";
-  String _currentAnimationName = "badge_explorer";
+  String _currentAnimationName = "badge_expert";
+//  String _currentAnimationName = "badge_explorer";
 //  String _currentAnimationName = "loading";
 //  String _currentAnimationName = "jump";
   int action = 0;
 //  String title = "loading cat";
 //  String title = "badge challenger";
 //  String title = "badge dreamer";
-//  String title = "badge expert";
-  String title = "badge explorer";
+  String title = "badge expert";
+//  String title = "badge explorer";
 //  String assetfile = "assets/badge_challenger";
 //  String assetfile = "assets/badge_dreamer";
-//  String assetfile = "assets/badge_expert";
-  String assetfile = "assets/badge_explorer";
+  String assetfile = "assets/badge_expert";
+//  String assetfile = "assets/badge_explorer";
 //  String assetfile = "assets/cat_loading";
 //  String assetfile = "assets/Robot";
 
@@ -90,11 +90,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: new Text(title),
       ),
-      body: new Center(
+      body: new Container(
+        margin: new EdgeInsets.only(top: 30.0),
+        height: 300.0,
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: new NimaActor(assetfile, alignment:Alignment.topCenter, fit:BoxFit.fill,
-            animation:_currentAnimationName, mixSeconds:0.2),
+        child: new NimaActor("assets/badge_dreamer", alignment:Alignment.center, fit:BoxFit.scaleDown,
+            animation:"badge_dreamer", mixSeconds:1.0),
       ),
       floatingActionButton: new FloatingActionButton(
         onPressed: () {
@@ -118,11 +120,11 @@ class _MyHomePageState extends State<MyHomePage> {
 //                assetfile = "assets/badge_expert";
 //                _currentAnimationName = "badge_expert";
 //                break;
-              case 0:
-                title = "badge explorer";
-                assetfile = "assets/badge_explorer";
-                _currentAnimationName = "badge_explorer";
-                break;
+//              case 0:
+//                title = "badge explorer";
+//                assetfile = "assets/badge_explorer";
+//                _currentAnimationName = "badge_explorer";
+//                break;
 //              case 0:
 //                title = "loading cat";
 //                assetfile = "assets/cat_loading";
